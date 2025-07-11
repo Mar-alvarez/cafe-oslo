@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin:0 2dvw;
+            background: #0c0c0c;
+            font-family: sans-serif;
+            line-height: 1.5;
+        }
+
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-size: 1.5rem;
+            text-align: center;
+            color: #FFF;
+            padding: 4em 2em;
+            background: #9ba39f;
+        }
+
+        /* los margenes arriba y abajo entre distintas etiquetas se colapsan */
+        
+        header h1{
+            margin:0 0 40px 0;
+        }
+
+        header p{
+           /*  margin:30px 0 0 0; */
+           margin-top:10px;
+        }
+
+        .cajaPadre {
+
+            max-width: 980px;
+            margin:-50px auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 3px solid #000;
+            background: #ffffff;
+            font-size: 0.8rem;
+        }
+
+        .cajaPadre>div {
+            flex-basis: 27%;
+            border: 1px solid gray;
+        }
+
+        .cajaPadre>div:nth-child(even) {
+            background: #80f6c6;
+        }
+
+        .cajaPadre>div:nth-child(odd) {
+            background: #95dff2;
+        }
+
+        /* cambiamos margin y padding de caja 5 */
+        #ejemplo .caja5 {
+            /* margin:32px; */
+            /* margin:50px 15px; */
+            /* margin:10px 40px 100px; */
+            /* margin:10px 30px 70px 0; */
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 2em;
+            background: #eff211;
+        }
+
+        footer{
+            background: green;
+            text-align: center;
+            color: #FFF;
+            padding: 2em;
+        }
+
+        .boton-ofertas{
+            /* en los elementos en linea no funciona el margin por arriba y por abajo. Si necesito que funcione puedo cambiar propiedad display */
+            margin-bottom: 40px;
+            display: inline-block;
+            padding: 0.5em 1em;
+            background: red;
+            border-radius: 12px;
+
+            color:#FFF;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <title>Document</title>
+</head>
+
+<body id="ejemplo">
+    <header>
+        <h1>Probamos margin y padding</h1>
+
+        <a class="boton-ofertas" href="#">Ver ofertas</a>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit est vero ex non officia! Inventore ipsa
+            rem exercitationem molestias.</p>
+    </header>
+
+    <div class="cajaPadre">
+        <!-- CAJA 1 -->
+        <div class="caja1">
+            <h2>Caja1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+
+            <p>Lorem ipsum, dolor si Molestias illo porro corporis quo.</p>
+
+        </div>
+
+        <!-- CAJA 2 -->
+        <div class="caja2">
+            <h2>Caja2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias illo porro corporis quo.</p>
+        </div>
+
+        <!-- CAJA 3 -->
+        <div class="caja3">
+            <h2>Caja3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloremque.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisnde odio!</p>
+
+        </div>
+
+        <!-- CAJA 4 -->
+        <div class="caja4">
+            <h2>Caja4</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicdam.</p>
+
+        </div>
+
+        <!-- CAJA 5 -->
+        <div class="caja5">
+            <h2>Caja5</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisdam.</p>
+
+        </div>
+
+        <!-- CAJA 6 -->
+        <div class="caja6">
+            <h2>Caja6</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicdam.</p>
+
+        </div>
+
+        <!-- CAJA 7 -->
+        <div class="caja7">
+            <h2>Caja7</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quaerat esse animi expedita error
+                impedit veritatis praesentium id culpa quibusdam.</p>
+        </div>
+
+        <!-- CAJA 8 -->
+        <div class="caja8">
+            <h2>Caja8</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias illo porro corporis quo.</p>
+        </div>
+
+        <!-- CAJA 9 -->
+        <div class="caja9">
+            <h2>Caja9</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias illo porro corporis quo.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quis id nobis, corrupti ipsum
+                necessitatibus, veriuam.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Todos los derechos reservados
+    </footer>
+
+</body>
+
+</html>

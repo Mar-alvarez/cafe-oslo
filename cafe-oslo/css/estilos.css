@@ -1,0 +1,201 @@
+/* *************************** */
+/* ESTILOS CSS PARA CAFÉ OSLO
+    mediaqueries estará dentro de este archivo */
+/* *************************** */
+
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.1em;
+}
+ 
+ 
+body{
+    background: url('../imagenes/fondo.webp') center bottom/cover, #683721;
+    font-family: "Open Sans",sans-serif;
+    color:#343434;
+    line-height: 1.5; /* mejor sin unidad el line-height */
+}
+
+h1,h2,ul,li,figure{
+    margin:0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+address{
+    font-style: normal;
+}
+
+.separador{
+    height: 2px;
+    margin:1.2em auto;
+  
+    width: clamp(150px,35%,350px);
+
+    background: #FFF;
+}
+
+.boton{
+    display:inline-block;
+    margin: 1em 0;
+    border:3px solid #f5f0ed;
+    padding: 0.6em 0.8em;
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 0.9rem;
+    color:#f5f0ed;
+    text-decoration: none;
+}
+
+/* ESTRUCTURA */
+.ancho-maximo{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex.col-2 > *{
+    flex-basis: 50%;
+}
+
+.col-2.gapped{
+    row-gap: 36px;
+}
+
+.col-2.gapped > *{
+   flex-basis: 48%;
+}
+
+
+
+/* HEADER PRINCIPAL Y NAVEGACIÓN */
+.main-header{
+    padding: 2.5em;
+    background: url('../imagenes/fondo1.jpg') center/cover,#683721;
+    color:#f5f0ed;
+    text-align: center;
+}
+
+.main-header__top-bar.flex{
+    align-items: flex-end;
+    /* border:2px solid red; */
+}
+
+ 
+.main-nav__list{
+    column-gap: 1em;
+}
+
+.main-nav__list a{
+    color:#f5f0ed;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+
+.main-header__bottom-bar{
+    margin-top: 3em;
+}
+
+.main-header__titulo{
+    font-size: clamp(2rem, 7dvw, 3.5rem);
+    line-height: 1.3;
+}
+
+.main-header__descripcion{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* MAIN, SECCIONES */
+main{
+    margin-top: 48px;
+}
+
+/* zona roja y zona crema */
+.zonaRoja{
+    background:#9d3538;
+    color:#ded6c0;
+}
+
+.zonaCrema{
+    background:#ded6c0;
+    color:#9d3538;
+}
+
+.zonaRoja, .zonaCrema{
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.zonaRoja h2, .zonaCrema h2{
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+/* desayunar */
+.desayunar{
+    padding: 3em 1em;
+    background: url('../imagenes/fondo2.jpg') center/cover, #343434;
+    text-align: center;
+    color: #f5f0ed;
+}
+
+.desayunar h2{
+    font-size: clamp(1.6rem, 4dvw, 3rem);
+}
+
+/* productos */
+.contenedor-productos{
+    padding: 4em;
+    background: #FFF;
+}
+
+.producto__icono{
+    text-align: center;
+}
+
+.producto__icono img{
+    width: 80px;
+    height: auto;
+}
+
+.producto__imagen img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 40px 40px 0 0;
+    
+}
+
+.producto__titulo{
+    margin-top:0.8em;
+    margin-bottom: 0.4em;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.producto__descripcion strong{
+    color:#9d3538;
+}
+
+ 
+
+
+
+
+
+
+
